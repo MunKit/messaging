@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.munkit.messaging.FragmentMessage"
+    >
+
+
+    <ListView
+        android:id="@+id/history_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/pub_vehicle"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice" />
+
+    <EditText
+        android:id="@+id/pub_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pub_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pub_message"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Vehicle Number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/Send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pub_vehicle"
+        android:text="@string/send" />
+
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_clear"
+        android:id="@+id/history_clear_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+-->
+
+
+</RelativeLayout>
